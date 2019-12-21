@@ -2,7 +2,7 @@ package model.vo;
 
 import java.io.Serializable;
 
-public class Member implements Serializable{
+public class C_Member implements Serializable{
 	
 	private String id;
 	private String password;
@@ -11,9 +11,9 @@ public class Member implements Serializable{
 	private String email;
 	private int point;
 	
-	public Member() {}
+	public C_Member() {}
 
-	public Member(String id, String password, String name,
+	public C_Member(String id, String password, String name,
 				  String birthday, String email, int point) {
 		super();
 		this.id = id;
