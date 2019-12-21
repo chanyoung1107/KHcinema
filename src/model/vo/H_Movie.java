@@ -1,8 +1,9 @@
 package model.vo;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class H_Movie {
+public class H_Movie implements Serializable{
 	
 	private String title;		//제목
 	private String director;	//감독
@@ -11,11 +12,12 @@ public class H_Movie {
 	private String genre;		//장르 (장르는 6가지로만 : 로맨스/애니메이션/액션/공포/코미디/판타지)
 	private String grade;		//등급
 	private int runningtime;	//러닝타임
+	private String summary;
 	
 	public H_Movie() {}
 
 	public H_Movie(String title, String director, String[] actors, String national, String genre, String grade,
-			int runningtime) {
+			int runningtime, String summary) {
 		super();
 		this.title = title;
 		this.director = director;
@@ -24,6 +26,7 @@ public class H_Movie {
 		this.genre = genre;
 		this.grade = grade;
 		this.runningtime = runningtime;
+		this.summary = summary;
 	}
 
 	public String getTitle() {
@@ -81,14 +84,20 @@ public class H_Movie {
 	public void setRunningtime(int runningtime) {
 		this.runningtime = runningtime;
 	}
+	public String getSummary() {
+		return summary;
+	}
+	
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
 
 	@Override
 	public String toString() {
 		return "H_Movie [title=" + title + ", director=" + director + ", actors=" + Arrays.toString(actors)
 				+ ", national=" + national + ", genre=" + genre + ", grade=" + grade + ", runningtime=" + runningtime
-				+ "]";
+				+ ", summary=" + summary + "]";
 	}
 
-	
 	
 }
