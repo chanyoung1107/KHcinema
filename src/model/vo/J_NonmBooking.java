@@ -40,5 +40,20 @@ public class J_NonmBooking {
 	public void setNonmPhone(int nonmPhone) {
 		this.nonmPhone = nonmPhone;
 	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public void setShowTime(int showTime) {
+		this.showTime = showTime;
+	}
+	public void setSeat(int seat) {
+		this.seat = seat;
+	}
 	
+	@Override
+	public String toString() {
+		return "User [nonmName=" + nonmName + ", nonmPhone=" + nonmPhone + ", title=" + title 
+				+ ", showTime=" + showTime + ", seat=" + seat + "]";
+	}
+
 }
