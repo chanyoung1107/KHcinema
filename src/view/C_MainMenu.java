@@ -13,10 +13,11 @@ public class C_MainMenu {
 		while(true) {
 			System.out.println("1. 박스오피스 순위");
 			System.out.println("2. 영화 예매 / 취소");
-			System.out.println("3. 로그인");
-			System.out.println("4. 회원가입");
-			System.out.println("5. 이용방법");
-
+			System.out.println("3. 예매내역 확인");
+			System.out.println("4. 로그인");
+			System.out.println("5. 회원가입");
+			System.out.println("6. 이용방법");
+			
 			System.out.print("원하는 메뉴를 선택하세요 : ");
 			int mainnum = sc.nextInt();
 
@@ -28,9 +29,10 @@ public class C_MainMenu {
 				switch(mainnum) {
 //				case 1 : 박스오피스 페이지 (지호)
 //				case 2 : 회원/비회원 선택페이지
-//				case 3 : 로그인 페이지 (재선형)
-//				case 4 : 회원가입 페이지 (재선형)
-//				case 5 : 이용방법페이지
+//				case 3 : 회원/비회원 선택페이지
+//				case 4 : 로그인 페이지 (재선형)
+//				case 5 : 회원가입 페이지 (재선형)
+//				case 6 : 이용방법페이지
 				}
 			}
 		}
