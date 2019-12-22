@@ -1,26 +1,29 @@
 package model.vo;
 
 public class Y_Food {
-	private String foodCode;                                           // 음식 코드
 	private String foodName;                                           // 음식 이름
+	private String foodSize;                                           // 음식 사이즈
 	private int foodPrice;                                             // 음식 가격
 	private int calorie;                                               // 음식 칼로리  
+	private int stock;                                                 // 음식 재고량
 	
 	public Y_Food() {}
 
-	public Y_Food(String foodCode, String foodName, int foodPrice, int calorie) {
-		this.foodCode = foodCode;
+	public Y_Food(String foodName, String foodSize, int foodPrice, int calorie, int stock) {
 		this.foodName = foodName;
+		this.foodSize = foodSize;
 		this.foodPrice = foodPrice;
 		this.calorie = calorie;
+		this.stock = stock;
 	}
 	
-	public String getFoodCode() {
-		return foodCode;
-	}
 	
 	public String getFoodName() {
 		return foodName;
+	}
+	
+	public String getFoodSize() {
+		return foodSize;
 	}
 
 	public int getFoodPrice() {
@@ -31,12 +34,16 @@ public class Y_Food {
 		return calorie;
 	}
 	
-	public void setFoodCode(String foodCode) {
-		this.foodCode = foodCode;
+	public int getStock() {
+		return stock;
 	}
-
+	
 	public void setFoodName(String foodName) {
 		this.foodName = foodName;
+	}
+	
+	public void setFoodSize(String foodSize) {
+		this.foodSize = foodSize;
 	}
 
 	public void setFoodPrice(int foodPrice) {
@@ -47,9 +54,13 @@ public class Y_Food {
 		this.calorie = calorie;
 	}
 	
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
 	
-	public void menu() {
-		System.out.println(foodCode + " " + foodName + " " + foodPrice + "원 " + calorie + "kcal");
+	
+	public void menuInfo() {
+		System.out.println(foodName + " " + "(" + foodSize + ") " + foodPrice + "원 " + calorie + "kcal");
 	}
 
 }
