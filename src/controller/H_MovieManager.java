@@ -33,6 +33,24 @@ public class H_MovieManager {
 		}
 	}
 	
+	// 제목으로 검색하여 영화 객체 리턴하는  메소드
+	public H_Movie selectOneMovie(String title) {
+		ArrayList<H_Movie> list = md.readMovieList();
+		
+		H_Movie selectedMovie = null;
+		
+		if(list != null) {
+			for(int i = 0; i < list.size(); i++) {
+				if(list.get(i).getTitle().equals(title)) {
+					selectedMovie = list.get(i);
+					break;
+				}
+			}
+		}
+		
+		return selectedMovie;
+	}
+	
 	//파일에 들어있는 모든 영화의 값 출력
 	public void printAll() {
 		ArrayList<H_Movie> list = md.readMovieList();
@@ -43,8 +61,9 @@ public class H_MovieManager {
 		System.out.println(list);
 	}
 	
-
+	//영화 줄거리 출력 메소드
 	public void selectSummary(String title) {
+		
 		//전체 영화 정보 조회
 		ArrayList<H_Movie> list = md.readMovieList();
 		
