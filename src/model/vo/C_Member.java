@@ -26,7 +26,7 @@ public class C_Member implements Serializable{
 	this.wathced = wathced;
 }
 	
-//테스트용 생성자
+//테스트용 생성자//
 	public C_Member(String id, char[] password2, String name,
 			  String birthday, String email, String wathced) {
 	
