@@ -10,7 +10,7 @@ import model.vo.C_Member;
 public class S_MemberController {
 		
 	S_MemberDao md = new S_MemberDao();
-	//Dao객체 생성//
+	//Dao객체 생성
 
 
 //DAO에서 넘어온 객체 고객 정보

@@ -13,7 +13,7 @@ import java.io.ObjectOutputStream;
 import model.vo.C_Member;
 
 
-//
+
 public class S_MemberDao {
 	private String id;
 	private String password;

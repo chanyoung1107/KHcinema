@@ -3,7 +3,7 @@ package model.vo;
 import java.io.Serializable;
 
 public class C_Member implements Serializable{
-	//
+	
 	private String id;
 	private String password;
 	private String name;
