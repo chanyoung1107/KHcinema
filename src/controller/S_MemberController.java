@@ -14,7 +14,7 @@ public class S_MemberController {
 
 
 //DAO에서 넘어온 객체 고객 정보
-public void memberSignIn(String id, char[] password2, String nickName, String email) 
+public void memberSignIn(String id, String password, String name,String birthday, String email) 
 {
 	
 }	

@@ -16,13 +16,14 @@ import model.vo.C_Member;
 
 public class S_MemberDao {
 	private String id;
-	private char[] password2;
-	private String nickName;
-	private String email;
+	private String password;
 	private String name;
 	private String birthday;
+	private String email;
 	private int point;
 	private String wathced;
+	
+	private char[] password2;//테스트용 계정
 	
 	public void basicMember() {
 
@@ -39,7 +40,7 @@ public class S_MemberDao {
 	
 
 		try {
-			objOut = new ObjectOutputStream(new FileOutputStream("회원가입", false));
+			objOut = new ObjectOutputStream(new FileOutputStream("Member_List", false));
 		
 
 			objOut.flush();

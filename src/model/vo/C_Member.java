@@ -11,6 +11,7 @@ public class C_Member implements Serializable{
 	private String email;
 	private int point;
 	private String wathced;
+	
 	private char[] password2; //테스트용 패스워드
 	
 	public C_Member(String id, String password, String name,
